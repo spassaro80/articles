@@ -11,6 +11,7 @@ class ItemsAdmin(admin.ModelAdmin):
 
 class tablesAdmin(admin.ModelAdmin):
     model = tables
+    search_fields = ('table_name__startswith',)
 
 
 admin.site.register(Items, ItemsAdmin)

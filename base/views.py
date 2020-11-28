@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.files.storage import default_storage
 from .models import tables, Items
-from .loadData import *
+from .loadData import load_data_from_excel
 
 
 # Create your views here.
